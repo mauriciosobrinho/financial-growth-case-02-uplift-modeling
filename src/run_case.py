@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import platform
-import time
 from pathlib import Path
 
 import joblib
@@ -654,7 +653,6 @@ def create_oot_outputs(
 
 
 def main() -> None:
-    started = time.time()
     ensure_directories()
     plt.style.use("seaborn-v0_8-whitegrid")
 
@@ -829,7 +827,6 @@ def main() -> None:
             "Production value must be confirmed by a fresh randomized policy experiment."
         ),
         "runtime": {
-            "seconds": time.time() - started,
             "python": platform.python_version(),
             "lightgbm": lgb.__version__,
         },

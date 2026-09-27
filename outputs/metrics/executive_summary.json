@@ -39,7 +39,6 @@
   },
   "methodological_conclusion": "Propensity ranks likely converters; uplift ranks customers whose behavior is expected to change because of treatment. Production value must be confirmed by a fresh randomized policy experiment.",
   "runtime": {
-    "seconds": 91.75115513801575,
     "python": "3.12.0",
     "lightgbm": "4.7.0"
   }
