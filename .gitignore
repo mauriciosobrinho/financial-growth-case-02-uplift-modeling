@@ -1,0 +1,11 @@
+.venv/
+work/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+private_do_not_use_in_modeling/
+data/ground_truth/
+.private/
+presentation/_build/
+.artifact-validation/
+

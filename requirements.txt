@@ -1,0 +1,14 @@
+pandas>=2.2,<4
+numpy>=2.0,<3
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+lightgbm>=4.3,<5
+xgboost>=2.0,<4
+catboost>=1.2,<2
+shap>=0.46,<1
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+joblib>=1.4,<2
+jupyter>=1.0,<2
+nbformat>=5.10,<6
+nbconvert>=7.16,<8
