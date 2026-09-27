@@ -1,0 +1,46 @@
+{
+  "dataset": {
+    "rows": 300000,
+    "waves": 6,
+    "unique_customers": 300000
+  },
+  "experimental_design": {
+    "treatment_rate": 0.49974,
+    "delivery_rate_among_assigned": 0.9241872440335641,
+    "train_max_abs_smd": 0.009015049883500648
+  },
+  "development": {
+    "train_itt": 0.07298337316082046,
+    "validation_itt": 0.07750729240116677,
+    "champion": "S-Learner",
+    "validation_qini": 0.003516158081777721,
+    "validation_auuc": 0.022900731911309532,
+    "validation_uplift_at_20pct": 0.12220706590151448
+  },
+  "oot": {
+    "itt": 0.0769694483134706,
+    "itt_ci_low": 0.06913711088136792,
+    "itt_ci_high": 0.08480178574557329,
+    "qini": 0.0029707136701489457,
+    "auuc": 0.022163045607112842,
+    "uplift_at_20pct": 0.10832721102830278,
+    "predicted_negative_effect_share": 0.0041,
+    "propensity_uplift_spearman": 0.6653678183315872,
+    "top20_audience_overlap": 0.4967
+  },
+  "policy": {
+    "random_20_net_incremental_value": 54510.61890792465,
+    "top_propensity_20_net_incremental_value": 73310.80868560045,
+    "top_uplift_20_net_incremental_value": 74178.13760781253,
+    "top_uplift_20_incremental_conversions": 1083.2721102830278,
+    "top_uplift_20_roi": 18.052130775679785,
+    "uplift_value_vs_propensity": 867.3289222120802,
+    "uplift_value_vs_random": 19667.518699887885
+  },
+  "methodological_conclusion": "Propensity ranks likely converters; uplift ranks customers whose behavior is expected to change because of treatment. Production value must be confirmed by a fresh randomized policy experiment.",
+  "runtime": {
+    "seconds": 91.75115513801575,
+    "python": "3.12.0",
+    "lightgbm": "4.7.0"
+  }
+}

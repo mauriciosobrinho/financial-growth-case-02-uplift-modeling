@@ -1,0 +1,2 @@
+auuc,qini_coefficient,model,uplift_at_10pct,uplift_at_20pct,mean_estimated_cate,predicted_negative_effect_share,sample
+0.022163045607112842,0.0029707136701489457,S-Learner,0.12533013205282112,0.10832721102830278,0.07029498205760387,0.0041,OOT wave 6
