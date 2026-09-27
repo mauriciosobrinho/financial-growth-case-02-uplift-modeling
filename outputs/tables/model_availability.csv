@@ -1,0 +1,6 @@
+method,implemented,reason
+S-Learner,True,LightGBM outcome model with treatment indicator
+T-Learner / Two-model,True,Separate LightGBM outcome models by randomized arm
+X-Learner,True,Three-fold cross-fitted imputed treatment effects
+Causal Forest,False,econml not available in the execution environment
+Uplift Tree,False,causalml not available in the execution environment

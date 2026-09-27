@@ -1,0 +1,4 @@
+metric,value,interpretation
+assignment_rate,0.499948,Randomized assignment probability
+delivery_rate_among_assigned,0.9246481634089946,Operational compliance among assigned clients
+conversion_delivered_minus_not_delivered_descriptive,0.07621820260437381,Descriptive only; delivery is not randomized

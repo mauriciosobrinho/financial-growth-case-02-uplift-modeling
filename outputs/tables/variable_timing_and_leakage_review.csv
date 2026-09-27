@@ -1,0 +1,61 @@
+column,measurement_timing,description,model_role
+customer_id,pre_treatment,Identificador anonimizado e único do cliente.,identifier/time
+reference_date,pre_treatment,Data de referência imediatamente anterior à campanha.,identifier/time
+campaign_wave,pre_treatment,Onda mensal randomizada da campanha.,identifier/time
+customer_tenure_months,pre_treatment,Tempo de relacionamento com a instituição em meses.,pre-treatment covariate
+customer_segment,pre_treatment,Segmento comercial/comportamental.,pre-treatment covariate
+region,pre_treatment,Macrorregião do cliente.,pre-treatment covariate
+merchant_flag,pre_treatment,Indicador de perfil merchant.,pre-treatment covariate
+merchant_segment,pre_treatment,Porte do merchant; NotMerchant quando não aplicável.,pre-treatment covariate
+income_band,pre_treatment,Faixa de renda ou proxy socioeconômico.,pre-treatment covariate
+relationship_tier,pre_treatment,Nível de relacionamento com a instituição.,pre-treatment covariate
+days_since_last_transaction,pre_treatment,Dias desde a última transação antes da campanha.,pre-treatment covariate
+txn_count_30d,pre_treatment,Quantidade de transações nos 30 dias anteriores.,pre-treatment covariate
+txn_count_90d,pre_treatment,Quantidade de transações nos 90 dias anteriores.,pre-treatment covariate
+txn_value_30d,pre_treatment,Valor transacionado nos 30 dias anteriores.,pre-treatment covariate
+txn_value_90d,pre_treatment,Valor transacionado nos 90 dias anteriores; fortemente correlacionado com a janela de 30 dias.,pre-treatment covariate
+avg_ticket_30d,pre_treatment,Ticket médio nos 30 dias anteriores.,pre-treatment covariate
+avg_ticket_90d,pre_treatment,Ticket médio nos 90 dias anteriores.,pre-treatment covariate
+pix_in_count_30d,pre_treatment,Quantidade de Pix recebidos nos 30 dias anteriores.,pre-treatment covariate
+pix_out_count_30d,pre_treatment,Quantidade de Pix enviados nos 30 dias anteriores.,pre-treatment covariate
+pix_in_value_30d,pre_treatment,Valor de Pix recebidos nos 30 dias anteriores.,pre-treatment covariate
+pix_out_value_30d,pre_treatment,Valor de Pix enviados nos 30 dias anteriores.,pre-treatment covariate
+pix_active_days_30d,pre_treatment,Dias com atividade Pix nos 30 dias anteriores.,pre-treatment covariate
+avg_balance_30d,pre_treatment,Saldo médio nos 30 dias anteriores; contém zeros legítimos e missing.,pre-treatment covariate
+min_balance_30d,pre_treatment,Saldo mínimo nos 30 dias anteriores.,pre-treatment covariate
+max_balance_30d,pre_treatment,Saldo máximo nos 30 dias anteriores.,pre-treatment covariate
+balance_trend_90d,pre_treatment,Tendência relativa do saldo antes da campanha.,pre-treatment covariate
+salary_inflow_flag,pre_treatment,Indicador de entrada recorrente de salário.,pre-treatment covariate
+salary_inflow_avg_90d,pre_treatment,Valor médio de entradas salariais em 90 dias.,pre-treatment covariate
+card_txn_count_30d,pre_treatment,Quantidade de transações no cartão em 30 dias.,pre-treatment covariate
+card_spend_30d,pre_treatment,Gasto no cartão em 30 dias.,pre-treatment covariate
+card_utilization,pre_treatment,Razão aproximada de utilização do limite.,pre-treatment covariate
+credit_limit,pre_treatment,Limite de crédito disponível antes da campanha.,pre-treatment covariate
+days_since_last_card_txn,pre_treatment,Dias desde a última transação no cartão; possui código sentinela quando não aplicável.,pre-treatment covariate
+has_credit_card,pre_treatment,Indicador de cartão ativo.,pre-treatment covariate
+has_loan,pre_treatment,Indicador de empréstimo ativo.,pre-treatment covariate
+has_investment,pre_treatment,Indicador de investimento ativo.,pre-treatment covariate
+has_insurance,pre_treatment,Indicador de seguro ativo.,pre-treatment covariate
+has_pos,pre_treatment,Indicador de POS ativo.,pre-treatment covariate
+num_products,pre_treatment,Quantidade total de produtos ativos.,pre-treatment covariate
+app_sessions_30d,pre_treatment,Sessões no app nos 30 dias anteriores.,pre-treatment covariate
+app_sessions_90d,pre_treatment,Sessões no app nos 90 dias anteriores.,pre-treatment covariate
+days_since_last_app_session,pre_treatment,Dias desde a última sessão; contém código sentinela proposital.,pre-treatment covariate
+push_open_rate_90d,pre_treatment,Taxa histórica de abertura de push; missing cresce ao longo das ondas.,pre-treatment covariate
+email_open_rate_90d,pre_treatment,Taxa histórica de abertura de e-mail; missing cresce ao longo das ondas.,pre-treatment covariate
+product_page_views_30d,pre_treatment,Visualizações de páginas de produto antes da campanha.,pre-treatment covariate
+campaigns_received_90d,pre_treatment,Campanhas recebidas antes do experimento.,pre-treatment covariate
+campaign_clicks_90d,pre_treatment,Cliques em campanhas anteriores.,pre-treatment covariate
+offers_viewed_30d,pre_treatment,Ofertas visualizadas antes do experimento.,pre-treatment covariate
+previous_offer_acceptance_rate,pre_treatment,Taxa histórica de aceitação de ofertas.,pre-treatment covariate
+txn_count_trend_90d,pre_treatment,Tendência da quantidade de transações.,pre-treatment covariate
+txn_value_trend_90d,pre_treatment,Tendência do valor transacionado.,pre-treatment covariate
+digital_engagement_trend_90d,pre_treatment,Tendência de engajamento digital.,pre-treatment covariate
+treatment_assigned,assignment,Indicador de randomização: 1 recebeu atribuição ao tratamento; 0 controle.,treatment
+message_delivered,post_assignment,Indicador pós-atribuição de entrega efetiva da mensagem; representa non-compliance/mediador.,excluded post-treatment
+channel,post_assignment,Canal operacional da campanha para tratados; Control no grupo controle.,excluded post-treatment
+campaign_cost,post_assignment,Custo operacional observado da campanha; variável pós-tratamento.,excluded post-treatment
+post_campaign_product_page_views_7d,post_assignment,Visualizações após a campanha; variável deliberadamente pós-tratamento e inadequada como covariável pré-tratamento.,excluded post-treatment
+conversion_30d,outcome,Outcome binário observado: contratação/conversão em até 30 dias.,outcome
+revenue_30d,outcome,Receita observada em 30 dias associada à conversão.,outcome
+margin_30d,outcome,Margem bruta observada em 30 dias antes de descontar o custo de campanha.,outcome
